@@ -1,0 +1,132 @@
+<div class="container">
+
+    <!-- Hero Section -->
+
+    <div class="hero">
+
+        <h1>🏟 Sports Hall Booking</h1>
+
+        <p>Book your favorite sports hall in seconds.</p>
+
+    </div>
+
+    <!-- Hall Cards -->
+
+    <div class="row">
+
+        <div class="col-md-4"
+             ng-repeat="hall in data.halls">
+
+            <div class="hall-card">
+
+                <div class="hall-header">
+
+                    <h3>{{hall.name}}</h3>
+
+                    <span class="status">
+
+                        {{hall.status}}
+
+                    </span>
+
+                </div>
+
+                <hr>
+
+                <p>🏀 <b>Sport:</b> {{hall.sport}}</p>
+
+                <p>📍 <b>Location:</b> {{hall.location}}</p>
+
+                <p>👥 <b>Capacity:</b> {{hall.capacity}}</p>
+
+                <h4>
+
+                    ₹ {{hall.charge}}
+
+                    <small>/hour</small>
+
+                </h4>
+
+                <button
+                    class="btn btn-primary btn-block"
+                    ng-click="c.selectHall(hall)">
+
+                    Book Now
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Booking Form -->
+
+    <div class="booking-form"
+         ng-if="c.selectedHall">
+
+        <h2>
+
+            Book {{c.selectedHall.name}}
+
+        </h2>
+
+        <div class="form-group">
+
+            <label>Booking Date</label>
+
+            <input
+                type="date"
+                class="form-control"
+                ng-model="c.booking.date">
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Start Time</label>
+
+            <input
+                type="time"
+                class="form-control"
+                ng-model="c.booking.start">
+
+        </div>
+
+        <div class="form-group">
+
+            <label>End Time</label>
+
+            <input
+                type="time"
+                class="form-control"
+                ng-model="c.booking.end">
+
+        </div>
+
+        <button
+            class="btn btn-success"
+            ng-click="c.calculateCharge()">
+
+            Calculate Charge
+
+        </button>
+
+        <h3 ng-if="c.total">
+
+            Total Charge : ₹ {{c.total}}
+
+        </h3>
+
+        <button
+            class="btn btn-primary"
+            ng-click="c.bookNow()">
+
+            Submit Booking
+
+        </button>
+
+    </div>
+
+</div>
