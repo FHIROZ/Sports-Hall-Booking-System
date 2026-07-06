@@ -1,0 +1,264 @@
+/* =====================================================
+   Sports Hall Booking Widget
+   ===================================================== */
+
+body {
+    background: #eef3f8;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Hero Section */
+
+.hero {
+
+    text-align: center;
+
+    padding: 50px 20px;
+
+    margin-bottom: 40px;
+
+}
+
+.hero h1 {
+
+    font-size: 42px;
+
+    font-weight: 700;
+
+    color: #1f2937;
+
+    margin-bottom: 10px;
+
+}
+
+.hero p {
+
+    color: #6b7280;
+
+    font-size: 18px;
+
+}
+
+/* Hall Cards */
+
+.hall-card {
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    margin-bottom: 30px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.10);
+
+    transition: all .3s ease;
+
+}
+
+.hall-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+
+}
+
+.hall-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+.hall-header h3 {
+
+    margin: 0;
+
+    color: #111827;
+
+    font-size: 22px;
+
+    font-weight: 600;
+
+}
+
+/* Status Badge */
+
+.status {
+
+    background: #22c55e;
+
+    color: #ffffff;
+
+    padding: 6px 14px;
+
+    border-radius: 30px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+}
+
+.hall-card hr {
+
+    margin: 18px 0;
+
+}
+
+.hall-card p {
+
+    color: #4b5563;
+
+    font-size: 15px;
+
+    margin-bottom: 10px;
+
+}
+
+.hall-card h4 {
+
+    margin-top: 20px;
+
+    color: #2563eb;
+
+    font-weight: bold;
+
+    font-size: 24px;
+
+}
+
+.hall-card small {
+
+    color: #6b7280;
+
+}
+
+/* Buttons */
+
+.btn {
+
+    border-radius: 10px;
+
+    font-weight: 600;
+
+    transition: .3s;
+
+}
+
+.btn-primary {
+
+    background: #2563eb;
+
+    border: none;
+
+}
+
+.btn-primary:hover {
+
+    background: #1d4ed8;
+
+}
+
+.btn-success {
+
+    background: #16a34a;
+
+    border: none;
+
+}
+
+.btn-success:hover {
+
+    background: #15803d;
+
+}
+
+.btn-block {
+
+    width: 100%;
+
+    margin-top: 20px;
+
+}
+
+/* Booking Form */
+
+.booking-form {
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    padding: 35px;
+
+    margin-top: 50px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.12);
+
+}
+
+.booking-form h2 {
+
+    margin-bottom: 25px;
+
+    color: #111827;
+
+}
+
+.booking-form .form-group {
+
+    margin-bottom: 20px;
+
+}
+
+.booking-form label {
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+
+    display: block;
+
+}
+
+.booking-form input {
+
+    border-radius: 8px;
+
+    border: 1px solid #d1d5db;
+
+    padding: 10px;
+
+}
+
+.booking-form h3 {
+
+    color: #16a34a;
+
+    margin: 20px 0;
+
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .hero h1 {
+
+        font-size: 32px;
+
+    }
+
+    .booking-form {
+
+        padding: 20px;
+
+    }
+
+}
